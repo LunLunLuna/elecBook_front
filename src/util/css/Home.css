@@ -1,0 +1,88 @@
+.center-box {
+  text-align: center;
+}
+
+
+#header .logo {
+  justify-self: start;
+}
+#header .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#header .actions {
+  grid-column: 3;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-self: end;
+}
+
+.btnLogin {
+  display: flex;          /* 플렉스 박스 활성화 */
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  align-items: center;     /* 세로 방향 가운데 정렬 */
+  
+  width: 120px;
+  padding: 10px 14px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+.btnLogin:hover {
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+
+#container {
+  flex: 1; /* 헤더와 푸터를 제외한 나머지 공간을 다 차지 */
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  /* align-items: center;     세로 중앙 */
+}
+#container .title {
+  padding: 100px 0 0 0;
+}
+
+
+/* 팝업 */
+/* 팝업 배경 (어둡게) */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+/* 팝업 박스 */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+/* 팝업 입력란 */
+.modal-content input {
+  width: 80%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+/* 팝업 버튼 */
+.modal-buttons button {
+  margin: 0 5px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+
+.btnLogin {
+  font-weight: bold;
+  cursor: pointer;
+}
